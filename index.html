@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Movie Search</title>
+  </head>
+  <body>
+    <section>
+      <h2 class="center">Search:</h2>
+      <form id="search-form" class="border">
+        <div class="form-item">
+          <label for="movie-title">Title:</label>
+          <input
+            id="movie-title"
+            name="movie-title"
+            type="text"
+            class="form-element"
+          />
+        </div>
+        <div class="form-item">
+          <label for="movie-type">Type:</label>
+          <select id="movie-type" name="movie-type" class="form-element">
+            <option value="movie">Movie</option>
+            <option value="series">Series</option>
+            <option value="episode">Episode</option>
+          </select>
+        </div>
+        <button id="search-button" class="search-button form-element">
+          Search
+        </button>
+      </form>
+    </section>
+    <section class="films none-display">
+      <h2 class="center">Films:</h2>
+      <div class="films_container center"></div>
+      <div class="pagination center"></div>
+    </section>
+    <section class="film-info none-display">
+      <h2 class="center">Film info:</h2>
+      <div class="info_container center"></div>
+    </section>
+  </body>
+</html>
